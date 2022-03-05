@@ -1,6 +1,7 @@
 import React from 'react'
 import './Card.css'
-import logo from "./images/logo.png";
+import './Card1.css'
+import Image from './Image'
 
 function Card1() {
   
@@ -9,26 +10,28 @@ function Card1() {
       <div className='card-style'>
         <div className="box">
           <section className='left'>
-            <div>
-              hghw
+            <div className='pages'>
+            <div className='current'>1</div>
+            <div className='other'>2</div>
+            <div className='other'>3</div>
             </div>
             <div>
-            <header><h1>Details</h1></header>
-            <form>
-              <label for="Email">Email</label>
-              <input type="text" id='Email' name='email' placeholder='example@xyz.com'/>
-              <br />
-              <label for="Name">Name</label>
-              <input type="text" id='Name' name='name' placeholder='Type your name'/>
-              <br />
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" pattern="[1-9]{1}[0-9]{9}" required/>
-              <br />
-              <input type="submit" value="Next" />
-            </form>
+              <header><h1>Details</h1></header>
+              <form className='details'>
+                <label for="Email"><strong>Email</strong></label>
+                <input class="email" type="text" id='Email' name='email' placeholder='example@xyz.com' pattern='[a-z0-9]+@[a-z]+\.[a-z]{2,3}' required/>
+                <br />
+                <label for="Name"><strong>Name</strong></label>
+                <input class="name" type="text" id='Name' name='name' placeholder='Type your name' required/>
+                <br />
+                <label for="phone"><strong>Phone</strong></label>
+                <input type="tel" id="phone" name="phone" pattern="[1-9]{1}[0-9]{9}" required/>
+                <br />
+                <input class="next-btn" type="submit" value="Next" />
+              </form>
             </div>
           </section>
-          <div><img src={logo} alt='logo' /></div>
+          <Image/>
         </div>
       </div>
     </div>

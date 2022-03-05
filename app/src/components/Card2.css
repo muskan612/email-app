@@ -1,0 +1,8 @@
+.back-btn {
+	position: relative;
+	left: -10px;
+}
+.next-btn {
+	position: relative;
+	right: -35px;
+}
