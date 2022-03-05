@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.full-page {
+	height: 100%;
+	width: 100%;
+	background-image: url('E:\Web Dev\Projects\Unikorn\email-app\app\src\components\images\background2.jpg');
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.box {
+	width: 800px;
+	height: 500px;
+	background-color: aliceblue;
+	margin: auto;
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: auto auto;
+	border-radius: 15px;
+}
+
+.left {
+	width: 390px;
+	display: grid;
+	grid-template-rows: 120px auto;
+	text-align: center;
+}
+
+img {
+	width: 390px;
+	height: 480px;
+	margin-top: 10px;
+	border-radius: 15px;
+}
