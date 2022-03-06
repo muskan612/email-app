@@ -132,6 +132,10 @@ input {
 	color: white;
 }
 
+.back-btn:hover {
+	background: rgb(21, 124, 38);
+	cursor: pointer;
+}
 .next-btn:hover {
 	background: rgb(21, 124, 38);
 	cursor: pointer;
@@ -185,7 +189,8 @@ input {
 	.email,
 	.name,
 	.gender,
-	.addr {
+	.addr,
+	.phone {
 		width: 200px;
 		height: 20px;
 	}
@@ -206,7 +211,8 @@ input {
 		margin-left: 35px;
 	}
 	.email,
-	.name {
+	.name,
+	.phone {
 		width: 172px;
 		height: 18px;
 	}

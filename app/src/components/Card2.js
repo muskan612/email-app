@@ -1,10 +1,17 @@
 import React from 'react'
 import './Card.css'
-import './Card2.css'
+// import './Card2.css'
 import Image from './Image'
 
-function Card1() {
+function Card2() {
   
+  const handleSubmit = (e) => {
+    var gender = document.getElementById("gender").value;
+    var addr = document.getElementById("addr").value;
+
+    localStorage.setItem('gender', gender);
+    localStorage.setItem('addr', addr);
+  }
   return (
     <div className="full-page">
       <div className='card-style'>
@@ -17,21 +24,21 @@ function Card1() {
             </div>
             <div>
               <header><h1>More Details</h1></header>
-              <form className='details'>
-                <label class='lab' for="Gender"><strong>Gender</strong></label>
-                <input list="genders" class='gender' type="text" id='gender' name='gender' placeholder='Select Gender' required/>
+              <form className='details' action='/preview'>
+                <label className='lab' htmlFor="Gender"><strong>Gender</strong></label>
+                <input list="genders" className='gender' type="text" id='gender' name='gender' placeholder='Select Gender' required/>
                 <datalist id="genders">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
                 </datalist>
                 <br />
-                <label class='lab' for="Address"><strong>Address</strong></label>
-                <input class="addr" type="text" id='addr' name='addr' placeholder='Your Address' required/>
+                <label className='lab' htmlFor="Address"><strong>Address</strong></label>
+                <input className="addr" type="text" id='addr' name='addr' placeholder='Your Address' required/>
                 <br />
                 <br />
-                <input class="back-btn" type="submit" value="Back" />
-                <input class="next-btn" type="submit" value="Next" />
+                <a href='/details'><input className="back-btn" type="button" value="Back" /></a>
+                <input className="next-btn" type="submit" onClick={handleSubmit} value="Next" />
               </form>
             </div>
           </section>
@@ -42,4 +49,4 @@ function Card1() {
   )
 }
 
-export default Card1
+export default Card2

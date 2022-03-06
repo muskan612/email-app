@@ -1,0 +1,51 @@
+.email,
+.name {
+	margin-left: 30px;
+}
+
+.phone {
+	margin-left: 25px;
+}
+
+@media screen and (max-width: 810px) {
+	.email,
+	.name,
+	.phone,
+	.gender,
+	.addr {
+		width: 170px;
+	}
+	.details {
+		margin: 25px 30px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.email,
+	.name,
+	.phone,
+	.gender,
+	.addr {
+		width: 190px;
+	}
+	.details {
+		position: relative;
+		top: -10px;
+		margin: 0px 45px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.email,
+	.name,
+	.phone,
+	.gender,
+	.addr {
+		width: 165px;
+	}
+	.details {
+		position: relative;
+		top: -10px;
+		margin: 0px 30px;
+	}
+}
