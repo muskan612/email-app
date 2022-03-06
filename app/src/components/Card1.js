@@ -2,6 +2,7 @@ import React from 'react'
 import './Card.css'
 import './Card1.css'
 import Image from './Image'
+import Phone from './Phone'
 
 function Card1() {
   
@@ -24,6 +25,10 @@ function Card1() {
                 <label for="Name"><strong>Name</strong></label>
                 <input class="name" type="text" id='Name' name='name' placeholder='Type your name' required/>
                 <br />
+                <div className="phoneno">
+                {/* <label for="phone"><strong>Phone</strong></label>
+                <Phone/> */}
+                </div>
                 <label for="phone"><strong>Phone</strong></label>
                 <input type="tel" id="phone" name="phone" pattern="[1-9]{1}[0-9]{9}" required/>
                 <br />

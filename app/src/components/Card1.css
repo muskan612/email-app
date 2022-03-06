@@ -2,3 +2,25 @@
 	position: relative;
 	left: 80px;
 }
+
+.phoneno {
+	display: grid;
+	grid-template-columns: 56px 50px;
+}
+
+.form-control {
+	width: 20px;
+	background: rgba(36, 218, 66, 0.3);
+}
+
+@media screen and (max-width: 730px) {
+	.next-btn {
+		left: 90px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.next-btn {
+		left: 70px;
+	}
+}

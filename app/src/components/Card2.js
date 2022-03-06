@@ -18,15 +18,15 @@ function Card1() {
             <div>
               <header><h1>More Details</h1></header>
               <form className='details'>
-                <label for="Gender"><strong>Gender</strong></label>
-                <input list="genders" class='gender' type="text" id='gender' name='gender' required/>
+                <label class='lab' for="Gender"><strong>Gender</strong></label>
+                <input list="genders" class='gender' type="text" id='gender' name='gender' placeholder='Select Gender' required/>
                 <datalist id="genders">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
                 </datalist>
                 <br />
-                <label for="Address"><strong>Address</strong></label>
+                <label class='lab' for="Address"><strong>Address</strong></label>
                 <input class="addr" type="text" id='addr' name='addr' placeholder='Your Address' required/>
                 <br />
                 <br />

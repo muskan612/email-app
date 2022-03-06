@@ -136,3 +136,89 @@ input {
 	background: rgb(21, 124, 38);
 	cursor: pointer;
 }
+
+@media screen and (max-width: 810px) {
+	.box {
+		width: 700px;
+	}
+	.left {
+		width: 330px;
+		margin-left: 0px;
+	}
+	.image {
+		width: 350px;
+	}
+	.details {
+		margin: 25px 30px;
+		margin-left: 40px;
+	}
+	.lab {
+		font-size: 13px;
+	}
+	input {
+		width: 170px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.image,
+	img,
+	p {
+		display: none;
+	}
+	.box {
+		width: 400px;
+	}
+	.left {
+		width: 400px;
+	}
+	.details {
+		width: 300px;
+		margin: 25px 50px;
+	}
+	label {
+		font-size: 16px;
+	}
+	.lab {
+		font-size: 15px;
+	}
+	.email,
+	.name,
+	.gender,
+	.addr {
+		width: 200px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.box {
+		width: 320px;
+	}
+	.left {
+		width: 320px;
+	}
+	.details {
+		width: 260px;
+		margin: 25px 30px;
+	}
+	.pages {
+		margin-left: 35px;
+	}
+	.email,
+	.name {
+		width: 172px;
+		height: 18px;
+	}
+	.gender,
+	.addr {
+		width: 165px;
+	}
+	.lab {
+		font-size: 13px;
+		margin-left: 2px;
+	}
+	label {
+		font-size: 13px;
+	}
+}

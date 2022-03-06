@@ -6,3 +6,21 @@
 	position: relative;
 	right: -35px;
 }
+
+@media screen and (max-width: 810px) {
+	.next-btn {
+		right: -20px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.next-btn {
+		right: -55px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.next-btn {
+		right: -15px;
+	}
+}
